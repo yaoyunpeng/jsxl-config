@@ -4,12 +4,12 @@ spring:
     -  dev
 
 ---
-spring
+spring:
   profiles: dev
   application:
     name: jsxl-config-dev
 ---
-spring
+spring:
   profiles: test
   application:
     name: test

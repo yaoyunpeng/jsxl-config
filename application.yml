@@ -14,7 +14,7 @@ spring:
     name: jsxl-config-test
 ---
 spring:
-  profiles: userprovider
+  profiles: upr
   application:
     name: med-provider
   datasource:
@@ -27,18 +27,4 @@ spring:
       min-idle: 5                                           # 数据库连接池的最小维持连接数
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
-      max-wait-millis: 200                                  # 等待连接获取的最大超时时间
-  #缓存
-  redis:
-    database: 3
-    host: 127.0.0.1
-    jedis:
-      pool:
-        max-active: 8
-        max-idle: 8
-        max-wait: -1
-        min-idle: 0
-      shutdown-timeout: 100
-    password: ''
-    port: 6379
-    timeout: 3600
+      max-wait-millis: 200                                  # 等待连接获取的最大超时时
